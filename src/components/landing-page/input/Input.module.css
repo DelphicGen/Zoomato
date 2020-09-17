@@ -1,0 +1,14 @@
+.input {
+    border-bottom: 1px solid #fff;
+}
+
+.input__after {
+    border-bottom: solid 2px #fff;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.input:focus + .input__after {
+    transform-origin: 100% 50%;
+    transform: scaleX(1);
+}

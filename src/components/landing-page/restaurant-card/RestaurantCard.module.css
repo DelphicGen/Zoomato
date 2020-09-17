@@ -1,0 +1,33 @@
+.restaurantCard {
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.restaurantCard__city {
+    background-color: rgba(43, 45, 66, .7);
+    transition: all .3s ease-in-out;
+}
+
+.restaurantCard__city:hover {
+    background-color: rgba(43, 45, 66, .9);
+    font-size: 20px;
+}
+
+.restaurantCard__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 767px) {
+    .restaurantCard {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .restaurantCard {
+        width: 100%;
+    }
+}
