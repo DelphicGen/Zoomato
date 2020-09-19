@@ -10,6 +10,12 @@ test('renders without crashing', () => {
 })
 
 test('renders button correctly', () => {
-    const {getByTestId} = render(<Button text="Load" />)
-    expect(getByTestId('button')).toHaveTextContent('Load')
+    // const {getByTestId} = render(<Button text="Load" />)
+    // expect(getByTestId('button')).toHaveTextContent('Load')
+
+
+    const {getByText} = render(<Button text="Load" />)
+    // expect(getByText('Load')).not.toBeNull();
+
+    getByText('Load')
 })
